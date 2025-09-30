@@ -1,0 +1,50 @@
+:root {
+  --clinic-primary: #0d6efd; /* puedes ajustar al color de la clínica */
+  --clinic-accent: #0b5ed7;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Ajustes del carrusel para altura en pantallas grandes */
+.carousel-inner img {
+  max-height: 480px;
+  object-fit: cover;
+}
+
+/* Buttons personalizados */
+.btn-primary {
+  background-color: var(--clinic-primary);
+  border-color: var(--clinic-primary);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Pequeños ajustes responsivos */
+@media (max-width: 576px) {
+  .carousel-inner img {
+    max-height: 260px;
+  }
+}
+
+#doctorInfo.card {
+    font-size: 0.9rem;
+    max-width: 250px;
+  }
+
+  #doctorInfo .card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
+  .espaciado-vertical {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
